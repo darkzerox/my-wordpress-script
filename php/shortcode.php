@@ -5,7 +5,6 @@
  * @var [type]
  */
 
-
 add_shortcode('promotion','promotion');
 function promotion( $atts ){
 	$data = "" ;
@@ -22,6 +21,4 @@ function promotion( $atts ){
 	}
 	 return $data;
 }
-
-
 ?>

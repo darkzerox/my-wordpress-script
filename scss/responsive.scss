@@ -1,0 +1,17 @@
+@mixin respon($media:0px, $val:0px) {
+     @if $media==min{
+        @media (min-width: $val+px) {
+             @content;
+        }
+    }
+    @else if $media==max {
+         @media (max-width: $val + 1px){
+            @content;
+        }
+    }
+    @else {
+         @media (min-width: $media+px) and (max-width: $val - 1px){
+            @content;
+        }
+    }
+}

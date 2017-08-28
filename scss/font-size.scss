@@ -1,0 +1,6 @@
+@function fsize($block) {
+     @return map-get($fontSize, $block);
+}
+@mixin font-size ($size, $inset:'') {
+    font-size: ($size / 10)+ rem unquote($inset);
+}
